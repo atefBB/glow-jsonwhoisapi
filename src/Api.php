@@ -169,9 +169,14 @@ class Api {
 	 * @throws \ErrorException when the domain is not set or is null
 	 * @throws \ANYException when Guzzle encounters an exception
 	 * @throws \ErrorException when Guzzle does not return a 200
+	 * @param  string - $domain
 	 * @return array
 	 */
-	public function query() {
+	public function query($domain = null) {
+		if (!is_null($domain)) {
+			$this->setDomain($domain);
+		}
+
 		if (is_null($this->getGuzzler())) {
 			$this->setGuzzler(new Guzzler());
 		}

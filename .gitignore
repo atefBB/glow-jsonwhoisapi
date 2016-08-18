@@ -1,3 +1,4 @@
 /vendor/
 /test.php
 .DS_STORE
+php-cs-fixer.phar

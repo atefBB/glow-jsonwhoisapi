@@ -1,0 +1,18 @@
+{
+    "name": "glow/jsonwhoisapi",
+    "description": "A Guzzler library that consumes the jsonwhoisapi.com API",
+    "type": "library",
+    "require": {
+        "glow/guzzler": "^1.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kingdom Developers",
+            "email": "osi@kingdom.com"
+        }
+    ],
+    "autoload": {
+        "classmap": ["src"]
+    }
+}
